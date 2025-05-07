@@ -1,4 +1,4 @@
-window.alert("My Web mapping journey! 📚💪");
+// window.alert("My Web mapping journey! 📚💪");
 
 // Map initialization ], copied from Leaflet site
 // var map = L.map('map').setView([6.5244, 3.3792], 15);
@@ -149,4 +149,7 @@ L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 
 
+map.whenReady(function () {
+    document.getElementById('preloader').style.display = 'none';
+});
 
